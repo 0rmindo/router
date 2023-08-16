@@ -9,7 +9,7 @@ const SearchForm = () => {
     const hadleSubmit = (e) => {
         e.preventDefault();
 
-        navigate("/search?q" + query);
+        navigate("/search?q=" + query);
     }
 
   return (

@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 
 //Router
-import { createBrowserRouter, RouterProvider, Router } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Router, Navigate } from "react-router-dom";
 import Contact from './routes/Contact.jsx';
 import ErrorPage from './routes/ErrorPage.jsx';
 import Home from './routes/Home.jsx';
@@ -37,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "search",
         element: <Search />,
+      },
+      {
+        path: "teste",
+        element: <Navigate to="/" />
       }
     ]
   },
